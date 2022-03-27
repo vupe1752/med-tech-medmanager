@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_weight="50"
+        android:background="@color/MistyRose">
+
+        <TextView
+            android:id="@+id/med_name3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            android:textSize="20dp"
+            android:text="Medication Name"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/btn_delete3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:background="@drawable/ic_baseline_delete_outline_24"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_weight="50"
+        android:background="@color/MistyRose">
+
+        <TextView
+            android:id="@+id/instruction3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:hint="Instruction"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/provider_name3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:hint="Provider Name"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/archive3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:background="@drawable/ic_baseline_archive_24"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgsolid"
+    android:weightSum="100">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+            android:id="@+id/med_name1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Medication Name"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:background="@color/MediumOrchid"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="100"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:background="@color/MistyRose">
+
+                <EditText
+                    android:id="@+id/start_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:hint="Start Date"
+                    android:background="@color/white"
+                    android:textSize="20dp"/>
+                <Button
+                    android:id="@+id/btnstart_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/ic_baseline_calendar_today_24"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+                <EditText
+                    android:id="@+id/end_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:hint="End Date"
+                    android:background="@color/white"
+                    android:textSize="20dp"/>
+                <Button
+                    android:id="@+id/btnend_date1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@drawable/ic_baseline_calendar_today_24"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/provider_name1"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Provider Name"
+                android:background="@color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/dose1"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Dose"
+                android:background="@color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                        android:id="@+id/instruction1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:hint="Instruction"
+                        android:textSize="20dp" />
+
+            <EditText
+                        android:id="@+id/note1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:hint="Note"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="100"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:background="@color/Orchid">
+
+                <Button
+                    android:id="@+id/cancel1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:text="Cancel"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:background="@color/Orchid"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+                <Button
+                    android:id="@+id/save1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:text="Save"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:background="@color/Orchid"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/testing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

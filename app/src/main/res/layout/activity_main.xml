@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/addmed"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/btn_export"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/untitled114"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/MediumOrchid"
+                        android:text="Active Medications"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:gravity="center" />
+
+            <ListView
+                android:id="@+id/active_med_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:divider="@color/MistyRose"
+                android:dividerHeight="5.0sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/MediumOrchid"
+                android:gravity="center"
+                android:text="Archived Medications"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ListView
+                android:id="@+id/archived_med_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="20"
+                android:background="@color/white"
+                android:divider="@color/MistyRose"
+                android:dividerHeight="2.0sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
